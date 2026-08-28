@@ -1,0 +1,31 @@
+[Unit]
+Description=CodexBox restricted WSL task broker
+After=network.target
+
+[Service]
+Type=simple
+User=codexbox
+Group=codexbox
+EnvironmentFile=/etc/codexbox/config.env
+ExecStart=/usr/bin/python3 -m codexbox
+Restart=on-failure
+RestartSec=2
+NoNewPrivileges=true
+CapabilityBoundingSet=
+AmbientCapabilities=
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+PrivateDevices=true
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectKernelLogs=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+LockPersonality=true
+ReadWritePaths=/srv/codexbox
+ReadOnlyPaths=/opt/codexbox /etc/codexbox
+
+[Install]
+WantedBy=multi-user.target
+

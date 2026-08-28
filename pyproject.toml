@@ -1,0 +1,9 @@
+[project]
+name = "codexbox-wsl"
+version = "0.1.0"
+description = "Disposable and persistent WSL workspaces for Codex"
+requires-python = ">=3.9"
+
+[tool.unittest]
+test-loader = "unittest"
+

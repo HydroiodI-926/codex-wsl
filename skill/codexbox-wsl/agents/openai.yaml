@@ -1,0 +1,5 @@
+interface:
+  display_name: "CodexBox WSL"
+  short_description: "Run code in isolated or persistent WSL workspaces"
+  default_prompt: "Use $codexbox-wsl to build and test this project in the appropriate WSL workspace mode."
+

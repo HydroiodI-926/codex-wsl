@@ -1,0 +1,4 @@
+interface:
+  display_name: "WSL2 Bridge (CodexBox)"
+  short_description: "Route legacy WSL requests through restricted CodexBox"
+  default_prompt: "Use $wsl2-bridge to run this Linux task through the restricted CodexBox backend."
