@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # codex-wsl
 一个让wsl成为codex沙盒的skill
 =======
@@ -69,4 +68,3 @@ python -m unittest discover -s "tests" -v
 ```
 
 See `skill/codexbox-wsl/references/` for the mode-specific workflow and security invariants.
->>>>>>> fe3d7c4 (first commit)
